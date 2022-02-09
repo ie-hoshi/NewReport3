@@ -27,19 +27,29 @@ public class Enemy {
         dead = false;
         System.out.printf("%sのHPは%d。攻撃力は%dです。\n", name, maximumHP, attack);
     }
-
+    /**
+     * フィールドnameのためのゲッター
+     */
+    
     public String getName(){
         return this.name;
     }
 
+    /**
+     * フィールドhitpointのためのゲッター
+     */
     public int getHitPoint(){
         return this.hitPoint;
     }
-
+    /**
+     * フィールドattackのためのゲッター
+     */
     public int getAttack(){
         return this.attack;
     }
-
+    /**
+     * フィールドdeadのためのゲッター
+     */
     public boolean isDead(){
         return this.dead;
     }
